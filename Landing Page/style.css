@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    min-height: 100vh;
+    position: relative;
+    background-color: #E6E6EB;
+    width: 100vw;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.menu{
+    display: none;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    min-height: 12vh;
+    margin: 0 10px;
+}
+.nav-links{
+    display: flex;
+    /* background-color: paleturquoise; */
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links>li>::after{
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #ff6600;
+    /* width: 0%; */
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+.nav-links>li>:hover::after{
+    transform: scaleX(1);
+
+}
+
+/* Header Btn */
+.header-btn{
+    padding: 0 20px;  
+}
+
+.signup{
+    /* border: 2px solid black; */
+    padding: 15px 25px;
+    margin: 0 20px;
+}
+.signin{
+    /* border: 2px solid black; */
+    padding: 15px 25px;
+    background-color: #7a68f6;
+    border-radius: 10px;
+}
+.signin>span{
+    color: white;
+    
+}
+.inner-left-btn{
+    display: flex;
+    margin: 0 20px;
+}
+.inner-left-btn>a{
+    padding: 0 20px;
+}
+.inner-left-btn>a>button{
+    display: flex;
+    padding: 5px ;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.icon{
+    height:30px;
+    width: 30px;
+    cursor: pointer;
+}
+.icon>img{
+    padding-right: 5px;
+    height: 100%;
+    width: 100%;
+}
+.inner-section{
+    min-height: 80vh;
+    /* background-color: red; */
+    width: 100vw;
+    display: flex;
+
+}
+.left{
+    /* background-color: white; */
+    width: 50vw;
+    padding: 0 30px;
+    margin: auto;
+}
+.heading-text>h1{
+    line-height: 1.2;
+    letter-spacing: 2px;
+    
+}
+.heading-text>span{
+    background-color: #ff6600;
+    height: 3px;
+    display: block;
+    width: 5vw;
+    margin: 20px 0;
+    
+}
+
+.right{
+    background-color:#ff6600;
+    margin-top: 20px;
+    width: 50vw;
+    border-radius: 20px 20px 0px 0px;
+
+}
+.img-center>img{
+    margin: auto;
+}
+
+@media only screen and (max-width:752px){
+    body{
+        overflow: hidden;
+    }
+    .menu{
+        display: block;
+    }
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 12vh;
+        right: -20px;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 0%;
+        height: 80vh;
+        padding: 50px 0;
+        transition: all 300ms;
+    }
+    
+    .header-btn{
+        display: none;
+    }
+    .heading-text>h1{
+        font-size: 20px;
+    }
+.hide{
+    width: 100%;
+}
+}
