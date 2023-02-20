@@ -35,7 +35,7 @@ a{
 span{
     font-weight: bolder;
     padding: 0px 10px;
-    font-size: 22px;
+    font-size: 18px;
 }
 .search{
     /* right: 30px; */
@@ -48,7 +48,7 @@ span{
     align-items: center;
 }
 .search:hover input{
-    width: 400px;
+    width: 200px;
 }
 .search input{
     width: 0;
@@ -65,15 +65,15 @@ span{
 header{
     min-height: 100vh;
     width: 100%;
-    background:linear-gradient(rgba(0, 0, 0, 0.651),rgba(0, 0, 0, 0.463)),url('./assets/main-bg.jpg') no-repeat;
-    background-position: right;
+    background:linear-gradient(rgba(0, 0, 0, 0.651),rgba(0, 0, 0, 0.463)),url('./assets/BG1.jpg') no-repeat;
+    background-position: center;
     background-size: cover;
     position: relative;
     animation: fadein 1s;
 }
 .header-container{
     position: fixed;
-    top: 0;
+    /* top: 0; */
     width: 100%;
     min-height: 15vh;
     display: flex;
@@ -94,7 +94,7 @@ header{
 .navlinks>li>a{
     color: black;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
 }
 .navlinks>li::after{
     content: '';
@@ -108,6 +108,7 @@ header{
     transform: scale(1);
 
 }
+
 .menu{
     display: none;
 }
@@ -135,22 +136,22 @@ header{
     }
 }
 .main-content>h1{
-    font-size: 70px;
+    font-size: 50px;
     font-weight: bold;
 }
 p{
     text-align: justify;
-    font-size: 18px;
+    font-size: 15px;
 }
 .btn{
     background-color: #0d1137;
-    padding: 10px 15px;
+    padding: 7px 12px;
     text-align: center;
     border-radius: 10px;
     width: 25%;
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     transition: all 300ms;
 }
 .btn:hover{
@@ -178,7 +179,7 @@ p{
     color: white;
 }
 .sec-heading>h1{
-    font-size: 70px;
+    font-size: 50px;
     font-weight: bold;
     color: white;
     padding-top: 15px;
@@ -186,7 +187,7 @@ p{
 }
 .sec-heading>p{
     line-height: 42px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .menu-card{
@@ -200,7 +201,7 @@ p{
 
 }
 .wrap-card{
-    padding: 0px 60px;
+    padding: 0px 30px;
 }
 .card-items{
     /* background-color: rgb(0, 0, 0); */
@@ -246,8 +247,8 @@ p{
 
 }
 .left-img{
-    height: 500px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     margin: auto;
 }
 .right-column{
@@ -262,7 +263,7 @@ p{
     padding-right: 20px;
 }
 .title>h1{
-    font-size: 70px;
+    font-size: 50px;
     font-weight: bold;
     
 }
@@ -326,17 +327,17 @@ transform: translateY(50%);
     margin: auto;
 }
 .testi-img{
-    height: 150px;
-    width: 140px;
+    height: 120px;
+    width: 120px;
     margin: auto;
 }
 .sec-four>p{
     margin: 20px 0;
-    font-size: 18px;
+    font-size: 15px;
 
 }
 .sec-four>h2{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     text-align:center;
 
@@ -398,21 +399,20 @@ margin-top: 15vh;
     color: white;
 }
 .subsribe>h1{
-    font-size: 70px;
+    font-size: 50px;
     font-weight: bold;
     /* text-align: center; */
     padding-top: 15px;
     
 }
 .subsribe>p{
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.5em;
     padding: 20px 0;
     text-align: center;
 }
 /* footer */
 footer{
-    min-height: 80vh;
     background-color: black;
     position: relative;
 }
@@ -438,14 +438,14 @@ footer{
     font-weight: bold;
 }
 .foot-icons .fa-brands{
-    font-size: 25px;
+    font-size: 20px;
     padding: 20px;
     background: white;
     color: black;
     border-radius: 100%;
 }
 .foot-icons>a{
-    padding-left: 10px;
+    padding-left: 5px;
 }
 .fa-brands:hover{
     background-color: #FF1D46;
@@ -473,12 +473,12 @@ footer{
     /* background-color: #0d1137; */
     text-align: left;
     height: 100%;
-    font-size: 18px;
+    font-size: 15px;
 }
-.abt-links>li>a:hover{
+/* .abt-links>li>a:hover{
     text-decoration: underline;
     text-decoration: #064851;
-}
+} */
 
 .col3{
     /* background-color: red; */
@@ -513,24 +513,25 @@ footer{
 }
 .copyright>p{
     text-align: center;
-    font-size: 18px;
+    font-size: 13px;
     padding: 10px 0;
 }
+
+
 
 @media only screen and (max-width:1024px){
     .main-content{
         height: 50vh;
     }
     .main-content>h1{
-        font-size: 20px;
+        font-size: 35px;
         font-weight: bold;
     }
-    .main-content>p{
-        font-size: 12px;
-    }
+
     .btn{
         font-size: 12px;
-        width: 50%;
+        width: 30%;
+        margin-top: 3%;
     }
     /* section-1 */
     .sec-heading>h1{
@@ -666,6 +667,11 @@ footer{
         background-color: rgba(255, 255, 255, 0.153);
         overflow: hidden;
         transition: all 300ms;
+    }
+    .btn{
+        font-size: 12px;
+        width: 30%;
+        margin-top: 3%;
     }
    .search{
     position: absolute;
